@@ -1,4 +1,4 @@
-package com.rnapp;
+package com.juntraxApp;
 
 import android.app.Application;
 

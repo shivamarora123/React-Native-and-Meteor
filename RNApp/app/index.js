@@ -7,7 +7,7 @@ import settings from './config/settings';
 
 Meteor.connect(settings.METEOR_URL);
 
-const RNApp = (props) => {
+const juntraxApp = (props) => {
   const { status, user, loggingIn } = props;
 
   if (status.connected === false || loggingIn) {
@@ -18,7 +18,7 @@ const RNApp = (props) => {
   return <AuthStack />;
 };
 
-RNApp.propTypes = {
+juntraxApp.propTypes = {
   status: React.PropTypes.object,
   user: React.PropTypes.object,
   loggingIn: React.PropTypes.bool,
@@ -30,4 +30,4 @@ export default createContainer(() => {
     user: Meteor.user(),
     loggingIn: Meteor.loggingIn(),
   };
-}, RNApp);
+}, juntraxApp);
