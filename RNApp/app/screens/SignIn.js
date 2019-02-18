@@ -6,7 +6,7 @@ import KeyboardSpacer from 'react-native-keyboard-spacer';
 import { colors } from '../config/styles';
 import Button from '../components/Button';
 import GenericTextInput, { InputWrapper } from '../components/GenericTextInput';
-import logoImage from '../images/rn-logo.png';
+import logoImage from '../images/JuntraxMobile.png';
 
 const window = Dimensions.get('window');
 const styles = StyleSheet.create({
@@ -34,8 +34,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   logo: {
-    width: 125,
-    height: 125,
+    width: 150,
+    height: 150,
   },
   headerText: {
     fontSize: 30,
@@ -138,8 +138,8 @@ class SignIn extends Component {
             source={logoImage}
           />
 
-          <Text style={styles.headerText}>React Native Meteor</Text>
-          <Text style={styles.subHeaderText}>Boilerplate</Text>
+          <Text style={styles.headerText}>Juntrax Mobile App</Text>
+          <Text style={styles.subHeaderText}>Meteor Testing V0.1</Text>
         </View>
 
         <InputWrapper>
